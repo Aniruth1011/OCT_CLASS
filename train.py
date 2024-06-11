@@ -184,7 +184,7 @@ if __name__ == "__main__":
     try:
         args = parser.parse_args()
         main(args.iTrn,
-             args.x_val_path,
+             None,
              args.n_train,
              args.d)
         print('trnMeta.py ... done!')
