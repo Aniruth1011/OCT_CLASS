@@ -19,7 +19,7 @@ def get_parser():
     """defines the parser for this script"""
     module_parser = ArgumentParser(
         formatter_class=ArgumentDefaultsHelpFormatter)
-    module_parser.add_argument("-iTrn", dest="x_trn_path", type=str,
+    module_parser.add_argument("-iTrn", dest="/kaggle/input/icip-train-data", type=str,
                                help="training data directory")
     module_parser.add_argument("-iVal", dest="x_val_path",
                                type=str, default=None,
