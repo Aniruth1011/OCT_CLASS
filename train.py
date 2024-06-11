@@ -183,7 +183,7 @@ if __name__ == "__main__":
     parser = get_parser()
     try:
         args = parser.parse_args()
-        main(args.iTrn,
+        main("/kaggle/input/icip-train-data",
              None,
              args.n_train,
              args.d)
