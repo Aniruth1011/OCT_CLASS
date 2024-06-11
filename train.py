@@ -183,7 +183,7 @@ if __name__ == "__main__":
     parser = get_parser()
     try:
         args = parser.parse_args()
-        main(args.x_trn_path,
+        main(args.iTrn,
              args.x_val_path,
              args.n_train,
              args.d)
