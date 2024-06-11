@@ -74,7 +74,7 @@ def preprocess_dir(data_path, output_path, dataset, n_train, new_size):
         transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
     ])
     
-    dataset = NestedFolderDataset(data_path, img_type_dict, transform=transform)
+    dataset = NestedFolderDataset(data_path,  transform=transform)
     dataloader = DataLoader(dataset, batch_size=n_train, shuffle=True)
     
     img_stack, target_list, img_names = [], [], []
